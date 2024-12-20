@@ -9,9 +9,10 @@ public class mainSp {
 
 	public static void main(String[] args) {
 		ApplicationContext ioc = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-		Employee e = (Employee)ioc.getBean("b1");
-		System.out.println(e);
-		
+//		Employee e = (Employee)ioc.getBean("b1");
+//		System.out.println(e);
+		Employee e2 = (Employee)ioc.getBean("b2");
+		System.out.println(e2);
 
 	}
 

@@ -5,25 +5,94 @@
 
 	<!-- <bean/> definitions here -->
 
+
+	<!--
 	<bean name="b1" class="com.model.Employee">
 		<property name="id" value="1" />
 		<property name="name" value="krishna" />
 		<property name="gender" value="male" />
 		<property name="salary" value="39444" />
 		
+		
+		<property name="list">
+			<list>
+				<value>100</value>
+				<value>200</value>
+				<value>300</value>
+				<value>400</value>
+				<value>500</value>
+				<value>300</value>
+				<value>400</value>
+			</list>
+		</property>
+		
+		<property name="set">
+			<list>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+				<value>4</value>
+				<value>5</value>
+			</list>
+		</property>
+				<property name="map">
+			<map>
+				<entry key="1" value="ONE" />
+				<entry key="2" value="two" />
+				<entry key="3" value="THREE" />
+				<entry key="4" value="FOUR" />
+				<entry key="3" value="three" />
+				<entry key="2" value="TWO" />
+			</map>
+		</property>
+
 
 	</bean>
 
+-->
+	<bean id="b2" class="com.model.Employee">
 
-	<!-- <bean id="b2" class="com.model.Employee">
-		<constructor-arg name="id" value="2" />
 		<constructor-arg name="name" value="anna" />
 		<constructor-arg name="gender" value="female" />
+		<constructor-arg name="id" value="2" />
 		<constructor-arg name="salary" value="43647" />
-		<constructor-arg ref="add" />
-	</bean>
--->
+		<constructor-arg name="list">
+			<list>
+				<value>5</value>
+				<value>4</value>
+				<value>3</value>
+				<value>2</value>
+				<value>4</value>
+				<value>1</value>
+				<value>8</value>
+			</list>
+		</constructor-arg>
 
-	
+		<constructor-arg name="set">
+			<list>
+				<value>10</value>
+				<value>22</value>
+				<value>63</value>
+				<value>45</value>
+				<value>75</value>
+				<value>45</value>
+				<value>75</value>
+			</list>
+		</constructor-arg>
+
+		<constructor-arg name="map">
+			<map>
+				<entry key="5" value="FIVE" />
+				<entry key="6" value="SIX" />
+				<entry key="7" value="SEVEN" />
+				<entry key="6" value="six" />
+				<entry key="8" value="EIGHT" />
+				<entry key="5" value="five" />
+			</map>
+		</constructor-arg>
+	</bean>
+
 
 </beans>
