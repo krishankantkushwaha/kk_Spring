@@ -3,7 +3,7 @@ package com.model;
 public class Employee {
 	private String name ,gender;
 	private int id ,salary;
-	private Address address;
+
 
 
 	
@@ -16,25 +16,18 @@ public class Employee {
 	
 
 	
-	public Employee(int id, String name,String gender, int salary, Address address) {
+	public Employee(int id, String name,String gender, int salary) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.gender = gender;
 		this.salary = salary;
-		this.address = address;
+	
 	}
 
 
 
 
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
 	
 	public int getId() {
 		return id;
@@ -72,8 +65,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ",name=" + name + ", gender=" + gender + ", salary=" + salary + ", address="
-				+ address + "]";
+		return "Employee [id=" + id + ",name=" + name + ", gender=" + gender + ", salary=" + salary + "]";
 	}
 
 	
