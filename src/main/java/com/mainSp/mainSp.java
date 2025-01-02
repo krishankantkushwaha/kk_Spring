@@ -9,9 +9,9 @@ import com.model.Employee;
 public class mainSp {
 
 	public static void main(String[] args) {
-//		ApplicationContext ioc = new ClassPathXmlApplicationContext("ApplicationContext.xml");
-//		Employee e = (Employee)ioc.getBean("b1");
-//		System.out.println(e);
+		ApplicationContext ioc = new ClassPathXmlApplicationContext("ApplicationContext.xml");
+		Employee e = (Employee)ioc.getBean("b1");
+		System.out.println(e);
 //		Employee e2 = (Employee)ioc.getBean("b2");
 //		e2.getAddress().setCity("noida");
 //		e2.getAddress().sethNO(310);
@@ -20,10 +20,10 @@ public class mainSp {
 
 	                	// Parent-Child//
 
-		ApplicationContext ioc = new ClassPathXmlApplicationContext("parent_child.xml");
-	
-		Child emp = (Child) ioc.getBean("e2");
-		System.out.println(emp);
+//		ApplicationContext ioc = new ClassPathXmlApplicationContext("parent_child.xml");
+//	
+//		Child emp = (Child) ioc.getBean("e2");
+//		System.out.println(emp);
 		
 	}
 
